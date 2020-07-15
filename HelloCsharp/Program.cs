@@ -2,11 +2,18 @@
 
 namespace HelloCsharp
 {
-    class Program
+  class Program
+  {
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      Console.Write("Enter FirstName: ");
+      var firstName = Console.ReadLine();
+      Console.Write("Enter LastName: ");
+      string lastName = Console.ReadLine();
+
+      Console.WriteLine("{0} {1}", firstName, lastName);
+
+      Console.ReadLine();
     }
+  }
 }
