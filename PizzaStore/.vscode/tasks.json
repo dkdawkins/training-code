@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/HelloCsharp/HelloCsharp.csproj",
+                "${workspaceFolder}/PizzaStore.Client/PizzaStore.Client.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/HelloCsharp/HelloCsharp.csproj",
+                "${workspaceFolder}/PizzaStore.Client/PizzaStore.Client.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/HelloCsharp/HelloCsharp.csproj",
+                "${workspaceFolder}/PizzaStore.Client/PizzaStore.Client.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

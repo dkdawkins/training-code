@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/HelloCsharp/bin/Debug/netcoreapp3.1/HelloCsharp.dll",
+            "program": "${workspaceFolder}/PizzaStore.Client/bin/Debug/netcoreapp3.1/PizzaStore.Client.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/HelloCsharp",
+            "cwd": "${workspaceFolder}/PizzaStore.Client",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
