@@ -4,11 +4,11 @@ namespace PizzaStore.Domain.Models
 {
   public class Store
   {
-    public List<Order> OrdersP { get; }
+    public List<Order> Orders { get; }
 
     public Store()
     {
-      OrdersP = new List<Order>();
+      Orders = new List<Order>();
     }
   }
 }

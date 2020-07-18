@@ -1,18 +1,19 @@
+using System;
 using System.Collections.Generic;
 using PizzaStore.Domain.Models;
 
 namespace PizzaStore.Client
 {
-  internal class Startup
+  public class Startup
   {
-    internal Order CreateOrder(User user, Store store)
+    public Order CreateOrder(User user, Store store)
     {
       try
       {
         var order = new Order();
 
-        user.OrdersP.Add(order);
-        store.OrdersP.Add(order);
+        user.Orders.Add(order);
+        store.Orders.Add(order);
 
         return order;
       }
@@ -21,6 +22,19 @@ namespace PizzaStore.Client
         throw new System.Exception("we donked up");
         //return null;
       }
+      finally
+      {
+        //GC.Collect();
+      }
+    }
+    internal static void PrintMenu()
+    {
+        System.Console.WriteLine("Select 1 for Cheese Pizza");
+        System.Console.WriteLine("Select 2 for Pepperoni Pizza");
+        System.Console.WriteLine("Select 3 for Hawaiian Pizza");
+        System.Console.WriteLine("Select 4 for Custom Pizza");
+        System.Console.WriteLine("Select 5 for Show Cart");
+        System.Console.WriteLine("Select 6 for Exit");
     }
   }
 }

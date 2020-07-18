@@ -4,11 +4,11 @@ namespace PizzaStore.Domain.Models
 {
   public class User
   {
-    public List<Order> OrdersP { get; } //Ensures the refernece can't change
+    public List<Order> Orders { get; } //Ensures the refernece can't change
 
     public User()
     {
-      OrdersP = new List<Order>();
+      Orders = new List<Order>();
     }
   }
 }

@@ -7,23 +7,22 @@ namespace PizzaStore.Domain.Models
   {
     // STATE
     //fields
-    string ImageUrl = "";
-    double Diameter = 0;
-    public string Size = "";
-    public List<string> Toppings = new List<string>();
-    public string Crust = "";
+    private readonly string ImageUrl = "";
+    private double Diameter = 0;
+    private static string _name = "pizza";
+    private List<string> _toppings = new List<string>();
 
     //properties
 
-    public string SizeP { get; }
+    public string Size { get; }
     
-    public string CrustP { get; }
+    public string Crust { get; }
 
-    public List<string> ToppingsP
+    public List<string> Toppings
     {
       get
       {
-        return Toppings;
+        return _toppings;
       }
     }
 
@@ -48,9 +47,14 @@ namespace PizzaStore.Domain.Models
 
     public Pizza(string size, string crust, List<string> toppings)
     {
-      SizeP = size;
-      CrustP = crust;
-      ToppingsP.AddRange(toppings);
+      Size = size;
+      Crust = crust;
+      Toppings.AddRange(toppings);
+    }
+
+    public Pizza()
+    {
+      //Intentionally empty
     }
     //finalizers/deconstructors
   }
